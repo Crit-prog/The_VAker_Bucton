@@ -1,0 +1,9 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+        <div class="post-entry">
+          <h2><a href="">{{detail.lastName}}</a> </h2>
+        </div>
+    <a href="{% url 'Customer_Update' detail.pk%}"> Edit Details</a>
+    <a href="{% url 'Customer_Delete' detail.pk%}"> Delete Details</a>
+{% endblock content %}

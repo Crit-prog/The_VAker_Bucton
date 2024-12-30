@@ -1,0 +1,11 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+    <a href="{% url 'Customer_Create' %}"> + New Customer</a>
+    {% for detail in detail_list %}
+        <div class="post-entry">
+          <h2><a href="{% url 'Customer_Detail' detail.pk %}">{{detail.lastName}}</a></h2>
+        </div>
+
+    {% endfor %}
+{% endblock content %}
