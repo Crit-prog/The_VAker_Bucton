@@ -1,11 +1,15 @@
 from django.urls import path
-from .views import (HomePageView, AboutPageView, ItemPageView, ContactPageView, CustomerListView, CustomerDeleteView, CustomerCreateView, CustomerUpdateView, CustomerDetailView)
+from .import views
+from .views import (HomePageView, AboutPageView, ItemPageView, CustomerListView, CustomerDeleteView, CustomerCreateView, CustomerUpdateView, CustomerDetailView)
 
 urlpatterns = [
     path('', HomePageView.as_view(), name= 'home'),
+    path('login/', views.login_user, name='login'),
+    path('logout/', views.logout_user, name='logout'),
+    path('register/', views.register_user, name='register'),
+    path('product/<int:pk>', views.product, name= 'product'),
     path('aboutpage/', AboutPageView.as_view(), name='about'),
     path('itempage/', ItemPageView.as_view(), name='item'),
-    path('contactpage/', ContactPageView.as_view(), name='contact'),
     path('details/', CustomerListView.as_view(), name='details'),
     path('details/<int:pk>', CustomerDetailView.as_view(), name= 'Customer_Detail'),
     path('details/create', CustomerCreateView.as_view(), name='Customer_Create'),

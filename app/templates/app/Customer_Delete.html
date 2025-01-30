@@ -1,10 +1,12 @@
 {% extends 'app/base.html' %}
 {% load static %}
 {% block content %}
+    <div class="delete-user">
     <h1>Delete Post </h1>
     <form action="{% url 'Customer_Delete' object.pk %}" method="post">
         {% csrf_token %}
         <p>Are you sure you want to delete? "{{ object }}"?</p>
         <input type="submit" value="Confirm">
     </form>
+    </div>
 {% endblock content %}
