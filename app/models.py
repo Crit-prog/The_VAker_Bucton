@@ -1,6 +1,7 @@
 from django.db import models
 import datetime
 
+
 class Category(models.Model):
     name = models.CharField(max_length=100)
     def __str__(self):
@@ -41,6 +42,7 @@ class OrderLog(models.Model):
         ('Out for delivery', 'Out for delivery'),
         ('Delivered', 'Delivered'),
         ('Cancelled', 'Cancelled')))
+
 
 
 

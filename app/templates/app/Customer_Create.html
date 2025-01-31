@@ -6,7 +6,7 @@
         {% csrf_token %}
             <div class="wrapper">
         <div class="form-box login">
-            <h2>Register</h2>
+            <h2>Create Account</h2>
             <form action="">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
@@ -39,20 +39,13 @@
                     <input type="number" id="id_pNumber" name="phone" required>
                 </div>
                 <button type="submit" class="btn" value="Save">
-                    Register
+                    Create
                 </button>
-                <!--
-                <div class="login-register">
-                    <p>Dont have an account?
-                        <a href="#" class="register-link">Register</a>
-                    </p>
-                </div>
-                -->
             </form>
         </div>
     </div>
     </form>
-<div class="post-entry">
-          <h2><a href="{% url 'details' %}">Customer Lists{{detail.lastName}}</a></h2>
-        </div>
+<div class="list-entry">
+          <button class="list-button"><a href="{% url 'details' %}">Customer Lists{{detail.lastName}}</a></button>
+</div>
 {% endblock content %}

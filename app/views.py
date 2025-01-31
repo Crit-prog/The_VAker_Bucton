@@ -1,3 +1,4 @@
+
 from .forms import SignUpForm
 from django.shortcuts import render, redirect
 from django.template.context_processors import request
@@ -11,6 +12,7 @@ from django.contrib import messages
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
+
 
 def product(request,pk):
     product = Product.objects.get(id=pk)
@@ -100,4 +102,6 @@ class CustomerDeleteView(DeleteView):
     model = CustomerDetails
     template_name = 'app/Customer_Delete.html'
     success_url = reverse_lazy('details')
+
+
 

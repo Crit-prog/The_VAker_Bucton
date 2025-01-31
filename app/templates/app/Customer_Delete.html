@@ -1,6 +1,19 @@
 {% extends 'app/base.html' %}
 {% load static %}
 {% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="list-container">
     <div class="delete-user">
     <h1>Delete Post </h1>
     <form action="{% url 'Customer_Delete' object.pk %}" method="post">
@@ -8,5 +21,6 @@
         <p>Are you sure you want to delete? "{{ object }}"?</p>
         <input type="submit" value="Confirm">
     </form>
+    </div>
     </div>
 {% endblock content %}

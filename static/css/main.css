@@ -337,7 +337,8 @@ span{
 
 
 .wrapper{
-    margin-top: 13%;
+
+    margin: 10% 40% 0;
     width: 400px;
     height: 500px;
     background: transparent;
@@ -433,4 +434,99 @@ h1 {
     width: 200px;
     border-radius: 10px;
 }
+.card {
+    border-radius: 12px;
+}
 
+input {
+    border-radius: 6px !important;
+}
+
+button {
+    border-radius: 6px !important;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.formm {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.formmm {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.user-list{
+    margin:10% 35%;
+}
+
+.list-container{
+    margin:15% 35%;
+    padding: 30px;
+    width: 30%;
+    border: 2px solid rgba(225, 225, 225, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    text-align: center;
+    background: lightpink;
+}
+
+.list-item{
+
+}
+
+.list-button{
+    margin:5% 42%;
+    padding: 10px;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: lightpink;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.main-content{
+    margin: 50%;
+}
+
+.list-txt{
+    margin-bottom: 50px;
+}
+
+.reg-container{
+    margin:5% 35%;
+    padding: 5px 5px;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: lightpink;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.product-container{
+    margin:0 30%;
+    height: auto;
+    width: 100%;
+    padding: 0 50px;
+}
